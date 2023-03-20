@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Citatum</string>
+
+    <string name="default_text">default</string>
+
+    <!-- Side Menu Items -->
+    <string name="left_menu_category_settings_text">Settings</string>
+    <string name="left_menu_category_pencil_text">Create</string>
+    <string name="left_menu_category_hub_text">Hub</string>
+    <string name="left_menu_category_repository_text">Repository</string>
+    <string name="left_menu_category_tags_text">Tags</string>
+    <string name="left_menu_category_bookmarks_text">Bookmarks</string>
+    <string name="left_menu_category_basket_text">Basket</string>
+    <string name="left_menu_category_feedback_text">Feedback</string>
+    <string name="left_menu_division_line_description">Division line</string>
 </resources>

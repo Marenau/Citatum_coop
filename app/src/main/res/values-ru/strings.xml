@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Citatum</string>
+
+    <string name="default_text">По умолчанию</string>
+
+    <!-- Элементы бокового меню -->
+    <string name="left_menu_category_settings_text">Настройки</string>
+    <string name="left_menu_category_pencil_text">Создать</string>
+    <string name="left_menu_category_hub_text">Главная</string>
+    <string name="left_menu_category_repository_text">Репозиторий</string>
+    <string name="left_menu_category_tags_text">Метки</string>
+    <string name="left_menu_category_bookmarks_text">Закладки</string>
+    <string name="left_menu_category_basket_text">Корзина</string>
+    <string name="left_menu_category_feedback_text">Оставить отзыв</string>
+    <string name="left_menu_division_line_description">Разделительная черта</string>
 </resources>
