@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="left_menu_size">300dp</dimen>
-    <dimen name="navigation_rectangle_width">260dp</dimen>
-
-    <dimen name="navigation_left_text">25sp</dimen>
+    <dimen name="left_menu_rectangle_width">260dp</dimen>
+    <dimen name="left_menu_text">26sp</dimen>
 </resources>

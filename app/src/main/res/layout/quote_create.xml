@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/main_color"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/qc_return_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/return_button" />
+
+            <EditText
+                android:id="@+id/qc_title_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:fontFamily="@font/gothampro_black"
+                android:hint="@string/qc_title_hint"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/qc_first_division_rectangle"
+                android:layout_width="300dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/left_menu_division_line_description"
+                android:src="@drawable/division_rectangle"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/qc_author_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:fontFamily="@font/gothampro_medium"
+                android:hint="@string/qc_author_hint"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gothampro"
+                    android:text="@string/qc_tags_text"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/qc_tags_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/qc_text_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/gothampro_light"
+                    android:gravity="left"
+                    android:hint="@string/qc_text_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:fontFamily="@font/gothampro"
+                    android:text="@string/qc_pn_text_hint"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:hint="@string/qс_pn_hint"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,15 @@
     <string name="left_menu_category_basket_text">Корзина</string>
     <string name="left_menu_category_feedback_text">Оставить отзыв</string>
     <string name="left_menu_division_line_description">Разделительная черта</string>
+
+    <!-- Элемент нижнего меню -->
+    <string name="bn_button">создать</string>
+
+    <!-- Элементы окна создания цитаты -->
+    <string name="qc_title_hint">Название</string>
+    <string name="qc_author_hint">Автор</string>
+    <string name="qc_tags_text">Метки:</string>
+    <string name="qc_text_hint">Введите текст</string>
+    <string name="qc_pn_text_hint">Номер страницы:</string>
+    <string name="qс_pn_hint">10</string>
 </resources>
