@@ -5,7 +5,7 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 
 @Entity(tableName = "quote_tag_join",
-        primaryKeys = { "quote_id", "tag_id" },
+        primaryKeys = {"quote_id", "tag_id"},
         foreignKeys = {
                 @ForeignKey(entity = EntityQuote.class,
                         parentColumns = "uid",

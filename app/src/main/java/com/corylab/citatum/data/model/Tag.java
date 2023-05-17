@@ -17,8 +17,12 @@ public class Tag {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == this) {return true;}
-        if (!(obj instanceof Tag)) {return false;}
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Tag)) {
+            return false;
+        }
         Tag other = (Tag) obj;
         return Objects.equals(name, other.name);
     }

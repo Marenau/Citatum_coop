@@ -17,6 +17,7 @@ import java.util.List;
 public interface QuoteTagJoinDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insert(QuoteTagJoin quoteTagJoin);
+
     @Delete
     void delete(QuoteTagJoin quoteTagJoin);
 

@@ -7,7 +7,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.corylab.citatum.data.entity.EntityQuote;
 import com.corylab.citatum.data.entity.EntityTag;
 
 import java.util.List;

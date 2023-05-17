@@ -7,12 +7,13 @@ public class Quote {
     private String title;
     private String author;
     private String text;
-    private String date;
-    private String pageNumber;
+    private long date;
+    private int pageNumber;
     private int bookmarkFlag;
     private int removedFlag;
+    private long removedDate;
 
-    public Quote(int uid, String title, String author, String text, String date, String pageNumber, int bookmarkFlag, int removedFlag) {
+    public Quote(int uid, String title, String author, String text, long date, int pageNumber, int bookmarkFlag, int removedFlag, long removedDate) {
         this.uid = uid;
         this.title = title;
         this.author = author;
@@ -21,9 +22,10 @@ public class Quote {
         this.pageNumber = pageNumber;
         this.bookmarkFlag = bookmarkFlag;
         this.removedFlag = removedFlag;
+        this.removedDate = removedDate;
     }
 
-    public Quote(String title, String author, String text, String date, String pageNumber) {
+    public Quote(String title, String author, String text, long date, int pageNumber) {
         this.title = title;
         this.author = author;
         this.text = text;
@@ -46,12 +48,17 @@ public class Quote {
         this.pageNumber = quote.pageNumber;
         this.bookmarkFlag = quote.bookmarkFlag;
         this.removedFlag = quote.removedFlag;
+        this.removedDate = quote.removedDate;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == this) {return true;}
-        if (!(obj instanceof Quote)) {return false;}
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Quote)) {
+            return false;
+        }
         Quote other = (Quote) obj;
         return Objects.equals(title, other.title) &&
                 Objects.equals(author, other.author) &&
@@ -59,7 +66,8 @@ public class Quote {
                 Objects.equals(date, other.date) &&
                 Objects.equals(pageNumber, other.pageNumber) &&
                 bookmarkFlag == other.bookmarkFlag &&
-                removedFlag == other.removedFlag;
+                removedFlag == other.removedFlag &&
+                removedDate == other.removedDate;
     }
 
     public int getUid() {
@@ -94,19 +102,19 @@ public class Quote {
         this.text = text;
     }
 
-    public String getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(long date) {
         this.date = date;
     }
 
-    public String getPageNumber() {
+    public int getPageNumber() {
         return pageNumber;
     }
 
-    public void setPageNumber(String pageNumber) {
+    public void setPageNumber(int pageNumber) {
         this.pageNumber = pageNumber;
     }
 
@@ -124,5 +132,13 @@ public class Quote {
 
     public void setRemovedFlag(int removedFlag) {
         this.removedFlag = removedFlag;
+    }
+
+    public long getRemovedDate() {
+        return removedDate;
+    }
+
+    public void setRemovedDate(long removedDate) {
+        this.removedDate = removedDate;
     }
 }
