@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bmf_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/bmf_page_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:clickable="false"
+        android:fontFamily="@font/gothampro_black"
+        android:hyphenationFrequency="normal"
+        android:text="@string/bmf_page_text"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bmf_red_bookmark"
+        app:layout_constraintEnd_toStartOf="@+id/bmf_red_bookmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bmf_red_bookmark"
+        android:layout_width="60dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="25dp"
+        android:clickable="false"
+        android:contentDescription="@string/cd_red_bookmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_bookmark" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bmf_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmf_red_bookmark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

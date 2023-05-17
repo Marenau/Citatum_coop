@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gothampro"
+                android:gravity="center"
+                android:text="@string/category_settings_text"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp"
+                android:drawableStart="@drawable/settings_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/division_rectangle_first"
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_text" />
+
+            <TextView
+                android:id="@+id/pencil_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gothampro"
+                android:gravity="center"
+                android:text="@string/category_pencil_text"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:drawableStart="@drawable/pencil_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/division_rectangle_first" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/division_rectangle_second"
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pencil_text" />
+
+            <TextView
+                android:id="@+id/hub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gothampro"
+                android:gravity="center"
+                android:text="@string/category_hub_text"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:drawableStart="@drawable/hub_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/division_rectangle_second" />
+
+            <TextView
+                android:id="@+id/repository_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/gothampro"
+                android:text="@string/category_repository_text"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hub_text"
+                android:drawableStart="@drawable/repository_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/bookmark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/gothampro"
+                android:gravity="center"
+                android:text="@string/category_bookmarks_text"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:drawableStart="@drawable/bookmark_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repository_text" />
+
+            <TextView
+                android:id="@+id/basket_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/gothampro"
+                android:text="@string/category_basket_text"
+                android:textColor="@color/light_red"
+                android:textSize="24sp"
+                android:drawableStart="@drawable/basket_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bookmark_text"
+                android:drawablePadding="10dp"
+                android:gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/division_rectangle_third"
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/light_blue"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/basket_text" />
+
+            <TextView
+                android:id="@+id/feedback_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gothampro"
+                android:text="@string/category_feedback_text"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/division_rectangle_third"
+                android:drawableStart="@drawable/feedback_icon"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

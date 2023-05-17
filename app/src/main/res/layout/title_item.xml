@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/title_item"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingBottom="10dp">
+    android:paddingBottom="10dp"
+    android:id="@+id/title_item">
 
     <ImageView
-        android:id="@+id/ti_point_icon"
+        android:id="@+id/point_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -19,12 +18,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_weight="1"
+        android:layout_marginStart="10dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/ti_title_text"
+            android:id="@+id/title_title_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gothampro_medium"
@@ -33,7 +32,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/ti_author_text"
+            android:id="@+id/author_title_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gothampro"
@@ -42,5 +41,4 @@
             android:textSize="16sp" />
 
     </LinearLayout>
-
 </LinearLayout>

@@ -5,39 +5,46 @@
     android:layout_width="@dimen/left_menu_size"
     android:layout_height="match_parent"
     android:background="@color/background_color"
+    android:overScrollMode="never"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="1.0">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/lm_settings_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:drawablePadding="10dp"
             android:fontFamily="@font/gothampro"
             android:gravity="center"
             android:text="@string/left_menu_category_settings_text"
             android:textColor="@color/light_blue"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/settings_icon" />
+            app:drawableStartCompat="@drawable/icon_settings" />
 
         <ImageView
             android:id="@+id/lm_first_division_rectangle"
-            android:layout_width="@dimen/left_menu_rectangle_width"
+            android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_gravity="center"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:contentDescription="@string/left_menu_division_line_description"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            android:contentDescription="@string/cd_division_rectangle"
             android:src="@drawable/division_rectangle"
             app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/lm_pencil_tv"
             android:layout_width="wrap_content"
@@ -50,17 +57,21 @@
             android:text="@string/left_menu_category_pencil_text"
             android:textColor="@color/black"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/pencil_icon" />
+            app:drawableStartCompat="@drawable/icon_pencil" />
 
         <ImageView
             android:id="@+id/lm_second_division_rectangle"
-            android:layout_width="@dimen/left_menu_rectangle_width"
+            android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_gravity="center"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:contentDescription="@string/left_menu_division_line_description"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            android:contentDescription="@string/cd_division_rectangle"
             android:src="@drawable/division_rectangle"
             app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/lm_hub_tv"
             android:layout_width="wrap_content"
@@ -73,7 +84,7 @@
             android:text="@string/left_menu_category_hub_text"
             android:textColor="@color/black"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/hub_icon" />
+            app:drawableStartCompat="@drawable/icon_hub" />
 
         <TextView
             android:id="@+id/lm_repository_tv"
@@ -87,7 +98,7 @@
             android:text="@string/left_menu_category_repository_text"
             android:textColor="@color/black"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/repository_icon" />
+            app:drawableStartCompat="@drawable/icon_repository" />
 
         <TextView
             android:id="@+id/lm_tags_tv"
@@ -101,7 +112,7 @@
             android:text="@string/left_menu_category_tags_text"
             android:textColor="@color/black"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/tag_icon" />
+            app:drawableStartCompat="@drawable/icon_tag" />
 
         <TextView
             android:id="@+id/lm_bookmark_tv"
@@ -115,7 +126,7 @@
             android:text="@string/left_menu_category_bookmarks_text"
             android:textColor="@color/black"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/bookmark_icon" />
+            app:drawableStartCompat="@drawable/icon_bookmark" />
 
         <TextView
             android:id="@+id/lm_basket_tv"
@@ -129,17 +140,21 @@
             android:text="@string/left_menu_category_basket_text"
             android:textColor="@color/light_red"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/basket_icon" />
+            app:drawableStartCompat="@drawable/icon_basket" />
 
         <ImageView
             android:id="@+id/lm_third_division_rectangle"
-            android:layout_width="@dimen/left_menu_rectangle_width"
+            android:layout_width="match_parent"
             android:layout_height="3dp"
             android:layout_gravity="center"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:contentDescription="@string/left_menu_division_line_description"
+            android:layout_marginEnd="16dp"
+            android:clickable="false"
+            android:contentDescription="@string/cd_division_rectangle"
             android:src="@drawable/division_rectangle"
             app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/lm_feedback_tv"
             android:layout_width="wrap_content"
@@ -153,7 +168,7 @@
             android:text="@string/left_menu_category_feedback_text"
             android:textColor="@color/light_blue"
             android:textSize="@dimen/left_menu_text"
-            app:drawableStartCompat="@drawable/feedback_icon" />
+            app:drawableStartCompat="@drawable/icon_feedback" />
 
     </LinearLayout>
 </ScrollView>

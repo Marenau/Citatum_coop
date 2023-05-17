@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bn_down_cl"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:background="@color/main_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,20 +21,22 @@
             android:layout_width="34dp"
             android:layout_height="29dp"
             android:layout_marginStart="16dp"
+            android:contentDescription="@string/cd_icon_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/menu_icon" />
+            app:srcCompat="@drawable/icon_menu" />
 
         <ImageView
             android:id="@+id/bn_search_icon"
             android:layout_width="34dp"
             android:layout_height="29dp"
             android:layout_marginEnd="16dp"
+            android:contentDescription="@string/cd_icon_search"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/search_icon" />
+            app:srcCompat="@drawable/icon_search" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -42,14 +44,14 @@
         android:id="@+id/bn_button"
         android:layout_width="230dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/light_red"
         android:fontFamily="@font/gothampro_bold"
         android:letterSpacing="0.03"
         android:outlineProvider="none"
         android:text="@string/bn_button"
         android:textColor="@color/black"
-        android:textSize="26sp"
+        android:textSize="27sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/bn_down_cl"
         app:layout_constraintEnd_toEndOf="parent"
