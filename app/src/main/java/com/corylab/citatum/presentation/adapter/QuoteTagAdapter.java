@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.corylab.citatum.R;
 import com.corylab.citatum.data.model.Tag;
 
+/**
+ * Адаптер для отображения списка тегов цитаты.
+ */
 public class QuoteTagAdapter extends ListAdapter<Tag, QuoteTagAdapter.QuoteTagViewHolder> {
 
     private static final DiffUtil.ItemCallback<Tag> DIFF_CALLBACK = new DiffUtil.ItemCallback<Tag>() {

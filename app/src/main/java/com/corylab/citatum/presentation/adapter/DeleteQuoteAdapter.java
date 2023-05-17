@@ -19,6 +19,9 @@ import com.corylab.citatum.presentation.viewmodel.QuoteTagJoinViewModel;
 
 import java.text.DateFormat;
 
+/**
+ * Адаптер для отображения списка цитат с возможностью удаления.
+ */
 public class DeleteQuoteAdapter extends ListAdapter<Quote, DeleteQuoteAdapter.DeleteQuoteViewHolder> {
 
     private final Fragment fragment;

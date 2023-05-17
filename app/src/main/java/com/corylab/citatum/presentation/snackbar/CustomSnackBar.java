@@ -10,6 +10,9 @@ import android.widget.TextView;
 import com.corylab.citatum.R;
 import com.google.android.material.snackbar.Snackbar;
 
+/**
+ * Класс для создания пользовательского SnackBar.
+ */
 public class CustomSnackBar {
 
     public static void createSnackbar(View view, Context context, int id) {

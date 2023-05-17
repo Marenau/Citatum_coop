@@ -16,6 +16,9 @@ import com.corylab.citatum.data.model.Tag;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Адаптер для отображения списка выбора тегов.
+ */
 public class SelectTagAdapter extends ListAdapter<Tag, SelectTagAdapter.SelectTagViewHolder> {
 
     private final List<Tag> chosenList = new ArrayList<>();

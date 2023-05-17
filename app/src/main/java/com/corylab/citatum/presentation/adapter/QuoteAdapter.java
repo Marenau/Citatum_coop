@@ -21,6 +21,9 @@ import com.corylab.citatum.presentation.viewmodel.QuoteTagJoinViewModel;
 
 import java.text.DateFormat;
 
+/**
+ * Адаптер для отображения списка цитат.
+ */
 public class QuoteAdapter extends ListAdapter<Quote, QuoteAdapter.QuoteViewHolder> {
 
     private final Fragment fragment;

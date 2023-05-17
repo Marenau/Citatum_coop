@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.corylab.citatum.R;
 
+/**
+ * Главная активити приложения.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

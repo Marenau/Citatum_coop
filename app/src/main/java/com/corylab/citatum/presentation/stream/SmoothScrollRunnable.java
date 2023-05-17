@@ -2,6 +2,9 @@ package com.corylab.citatum.presentation.stream;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Класс для плавной прокрутки RecyclerView.
+ */
 public class SmoothScrollRunnable implements Runnable {
     private final RecyclerView recyclerView;
     private final int delayMillis = 100;

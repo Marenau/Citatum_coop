@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.corylab.citatum.R;
 
+/**
+ * Активити для входа в приложение.
+ */
 public class LoginActivity extends AppCompatActivity {
 
     @Override

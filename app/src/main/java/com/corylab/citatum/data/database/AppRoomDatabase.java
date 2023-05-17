@@ -16,13 +16,32 @@ import com.corylab.citatum.data.entity.QuoteTagJoin;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * Абстрактный класс AppRoomDatabase является базой данных Room.
+ * Определяет и предоставляет доступ к DAO (Data Access Object) для взаимодействия с таблицами базы данных.
+ */
 @Database(entities = {EntityQuote.class, EntityTag.class, QuoteTagJoin.class}, version = 1)
 public abstract class AppRoomDatabase extends RoomDatabase {
 
+    /**
+     * Возвращает объект QuoteDao, предоставляющий методы для работы с таблицей quotes_table.
+     *
+     * @return QuoteDao объект для взаимодействия с таблицей quotes_table.
+     */
     public abstract QuoteDao quoteDao();
 
+    /**
+     * Возвращает объект TagDao, предоставляющий методы для работы с таблицей tags_table.
+     *
+     * @return TagDao объект для взаимодействия с таблицей tags_table.
+     */
     public abstract TagDao tagDao();
 
+    /**
+     * Возвращает объект QuoteTagJoinDao, предоставляющий методы для работы с таблицей quote_tag_join.
+     *
+     * @return QuoteTagJoinDao объект для взаимодействия с таблицей quote_tag_join.
+     */
     public abstract QuoteTagJoinDao quoteTagJoinDao();
 
     private static volatile AppRoomDatabase INSTANCE;
@@ -30,6 +49,13 @@ public abstract class AppRoomDatabase extends RoomDatabase {
     public static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
     public static final ExecutorService databaseReadExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
+    /**
+     * Возвращает экземпляр базы данных AppRoomDatabase.
+     * Если база данных не существует, создает новый экземпляр с помощью Room.databaseBuilder.
+     *
+     * @param context Контекст приложения.
+     * @return Экземпляр базы данных AppRoomDatabase.
+     */
     public static AppRoomDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
             synchronized (AppRoomDatabase.class) {

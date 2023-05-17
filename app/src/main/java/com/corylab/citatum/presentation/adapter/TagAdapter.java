@@ -17,6 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.corylab.citatum.R;
 import com.corylab.citatum.data.model.Tag;
 
+/**
+ * Адаптер для отображения списка тегов.
+ */
 public class TagAdapter extends ListAdapter<Tag, TagAdapter.TagViewHolder> {
 
     int inflateId;
