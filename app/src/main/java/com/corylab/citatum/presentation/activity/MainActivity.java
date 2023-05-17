@@ -1,8 +1,10 @@
-package com.corylab.citatum;
+package com.corylab.citatum.presentation.activity;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.corylab.citatum.R;
 
 public class MainActivity extends AppCompatActivity {
 

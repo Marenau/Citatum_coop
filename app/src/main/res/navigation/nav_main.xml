@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/hubFragment">
+
+    <fragment
+        android:id="@+id/hubFragment"
+        android:name="com.corylab.citatum.presentation.fragment.HubFragment"
+        android:label="HubFragment"
+        tools:layout="@layout/fragment_hub">
+        <action
+            android:id="@+id/action_hubFragment_to_quoteCreateFragment"
+            app:destination="@id/quoteCreateFragment" />
+        <action
+            android:id="@+id/action_hubFragment_to_tagFragment"
+            app:destination="@id/tagFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryFragment"
+        android:name="com.corylab.citatum.presentation.fragment.RepositoryFragment"
+        android:label="RepositoryFragment"
+        tools:layout="@layout/fragment_repository" />
+    <fragment
+        android:id="@+id/quoteCreateFragment"
+        android:name="com.corylab.citatum.presentation.fragment.QuoteCreateFragment"
+        android:label="QuoteCreateFragment"
+        tools:layout="@layout/fragment_quote_create">
+        <action
+            android:id="@+id/action_quoteCreateFragment_to_tagSelectionFragment"
+            app:destination="@id/tagSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tagsFragment"
+        android:name="com.corylab.citatum.presentation.fragment.TagsFragment"
+        android:label="TagsFragment"
+        tools:layout="@layout/fragment_tags">
+        <action
+            android:id="@+id/action_tagsFragment_to_tagFragment"
+            app:destination="@id/tagFragment" />
+        <action
+            android:id="@+id/action_tagsFragment_to_tagCreateFragment"
+            app:destination="@id/tagCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tagFragment"
+        android:name="com.corylab.citatum.presentation.fragment.TagFragment"
+        android:label="TagFragment"
+        tools:layout="@layout/fragment_tag" />
+    <fragment
+        android:id="@+id/bookmarksFragment"
+        android:name="com.corylab.citatum.presentation.fragment.BookmarksFragment"
+        android:label="BookmarksFragment"
+        tools:layout="@layout/fragment_bookmarks" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.corylab.citatum.presentation.fragment.BasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.corylab.citatum.presentation.fragment.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/tagCreateFragment"
+        android:name="com.corylab.citatum.presentation.fragment.TagCreateFragment"
+        android:label="TagCreateFragment"
+        tools:layout="@layout/fragment_tag_create" />
+    <fragment
+        android:id="@+id/tagSelectionFragment"
+        android:name="com.corylab.citatum.presentation.fragment.TagSelectionFragment"
+        android:label="TagSelectionFragment"
+        tools:layout="@layout/fragment_tag_selection">
+        <action
+            android:id="@+id/action_tagSelectionFragment_to_tagCreateFragment"
+            app:destination="@id/tagCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.corylab.citatum.presentation.fragment.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search" />
+</navigation>
