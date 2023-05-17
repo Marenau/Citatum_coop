@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/sf_page_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="39dp"
+        android:clickable="false"
+        android:fontFamily="@font/gothampro_black"
+        android:hyphenationFrequency="normal"
+        android:text="@string/sf_page_text"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sf_profile_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:clickable="false"
+        android:contentDescription="@string/cd_icon_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sf_page_name"
+        app:srcCompat="@drawable/icon_profile" />
+
+    <LinearLayout
+        android:id="@+id/sf_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/sf_profile_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sf_profile_icon"
+        app:layout_constraintTop_toTopOf="@+id/sf_profile_icon">
+
+        <TextView
+            android:id="@+id/sf_username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="@font/gothampro_medium"
+            android:text="@string/default_text"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sf_email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="@font/gothampro"
+            android:text="@string/default_text"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/sf_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="@font/gothampro"
+            android:text="@string/default_text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sf_quit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_color"
+        android:fontFamily="@font/gothampro_medium"
+        android:letterSpacing="0.03"
+        android:outlineProvider="none"
+        android:text="@string/sf_quit_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="@+id/sf_ll"
+        app:layout_constraintTop_toBottomOf="@+id/sf_ll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

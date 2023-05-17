@@ -1,3 +1,135 @@
 <resources>
     <string name="app_name">Citatum</string>
+
+    <string name="default_text">default</string>
+    <string name="empty_recycler">There are no records</string>
+
+    <!-- Elements of the registration and login screens -->
+    <string name="login_text">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="register_text">Register</string>
+    <string name="forgot_text">Forgot?</string>
+    <string name="email_hint">Email</string>
+
+    <!-- Side Menu Items -->
+    <string name="left_menu_category_settings_text">Settings</string>
+    <string name="left_menu_category_pencil_text">Create</string>
+    <string name="left_menu_category_hub_text">Hub</string>
+    <string name="left_menu_category_repository_text">Repository</string>
+    <string name="left_menu_category_tags_text">Tags</string>
+    <string name="left_menu_category_bookmarks_text">Bookmarks</string>
+    <string name="left_menu_category_basket_text">Basket</string>
+    <string name="left_menu_category_feedback_text">Feedback</string>
+
+    <!-- Lower Menu Items -->
+    <string name="bn_button">create</string>
+
+    <!-- Hub fragment elements -->
+    <string name="hf_page_text">CITATUM</string>
+    <string name="hf_welcome_morning_text">Good morning!</string>
+    <string name="hf_welcome_day_text">Good day!</string>
+    <string name="hf_welcome_evening_text">Good evening!</string>
+    <string name="hf_welcome_night_text">Good night!</string>
+    <string name="hf_day_quote_text">Quote of the day:</string>
+    <string name="hf_day_base_quote">Nov or never!</string>
+    <string name="hf_quote_cv_edit_text">Edit…</string>
+    <string name="hf_repository_text">Repository:</string>
+    <string name="hf_tags_text">Tags:</string>
+
+    <!-- Elements of the quote creation window -->
+    <string name="qc_title_hint">Title</string>
+    <string name="qc_author_hint">Author</string>
+    <string name="qc_text_hint">Start writing…</string>
+    <string name="qc_pn_text_hint">Page number:</string>
+    <string name="qс_pn_hint">10</string>
+    <string name="qc_tags_text">Tags:</string>
+    <string name="qc_autosubstitution_title_text">No title</string>
+    <string name="qc_autosubstitution_author_text">No author</string>
+    <string name="qc_autosubstitution_text_text">Simple text</string>
+    <string name="qc_autosubstitution_page_number_text">0</string>
+    <string name="qc_quotes_added">The quote was successfully added.</string>
+    <string name="qc_quotes_update">The quote was successfully update.</string>
+    <string name="qc_quotes_remove">The quote was placed in the basket.</string>
+    <string name="qc_add_quote_request">Save the quote for making changes.</string>
+    <string name="qc_quote_bookmark_enable">The quote was successfully added to bookmarks.</string>
+    <string name="qc_quote_bookmark_disable">The quote was successfully remove from bookmarks.</string>
+
+    <!-- QuoteRepository fragment elements -->
+    <string name="rf_page_text">Repository</string>
+
+    <!-- Titles fragment elements -->
+    <string name="ttf_title_text">Title</string>
+    <string name="ttf_author_text">Author</string>
+
+    <!-- Tags fragment elements -->
+    <string name="tgf_page_text">Tags</string>
+
+    <!-- Bookmarks fragment elements -->
+    <string name="bmf_page_text">Bookmarks</string>
+
+    <!-- Basket fragment elements -->
+    <string name="bf_page_text">Basket</string>
+    <string name="bf_quotes_deleting_text">Quotes are automatically deleted after 30 days from the date of their placement in the basket.</string>
+
+    <!-- Settings fragment elements -->
+    <string name="sf_page_text">Settings</string>
+    <string name="sf_quit_text">Sing out</string>
+    <string name="sf_date_text">With us from</string>
+
+    <!-- Tag create fragment elements -->
+    <string name="tc_name_hint">Name</string>
+    <string name="tc_tags_text">You can add a tag to the quote, this will simplify the search in your repository.</string>
+    <string name="tc_tag_added">The tag was successfully added.</string>
+    <string name="tc_tag_update">The tag was successfully update.</string>
+    <string name="tc_autosubstitution_name_text">No name</string>
+
+    <!-- Notification texts -->
+    <string name="no_connection_title_text">Ops!</string>
+    <string name="no_connection_message_text">There is no Internet connection.</string>
+    <string name="no_connection_button_text">Oh…</string>
+    <string name="success_register_title_text">Success.</string>
+    <string name="success_register_message_text">Your account has been created successfully!</string>
+    <string name="success_register_button_text">OK</string>
+    <string name="rejected_register_title_text">Ops!</string>
+    <string name="rejected_register_message_text">An account with this email address already exists.</string>
+    <string name="rejected_register_button_text">Oh</string>
+    <string name="incorrect_register_title_text">Ops!</string>
+    <string name="incorrect_register_message_text">It looks like your data is incorrect. Make sure that you have entered the correct email address; the password contains at least one digit and is at least 8 characters long; all fields are written in Latin.</string>
+    <string name="incorrect_register_button_text">Well…</string>
+    <string name="incorrect_login_title_text">Ops!</string>
+    <string name="incorrect_login_message_text">It looks like your data is incorrect. Make sure that you have entered the correct email address and password.</string>
+    <string name="incorrect_login_button_text">Well…</string>
+    <string name="forgot_password_title_text">Attention</string>
+    <string name="forgot_password_message_text">Enter your email address in the field on the login screen, then click on the "forgot" button again.</string>
+    <string name="forgot_password_button_text">OK</string>
+    <string name="forgot_password_sent_title_text">Tip top</string>
+    <string name="forgot_password_sent_message_text">The message has been sent to your email. Follow the link provided in the email.</string>
+    <string name="forgot_password_sent_button_text">OK</string>
+
+    <!-- Text of notifications when deleted -->
+    <string name="sus_undo_text">Undo</string>
+    <string name="sus_text">Tag</string>
+    <string name="sus_delete_text">was delete.</string>
+    <string name="sus_quote_remove_text">The quote was placed in the basket.</string>
+    <string name="sus_quote_delete_text">The quote was deleted.</string>
+
+    <!-- Text for substitution when sending feedback -->
+    <string name="email_address">citatumcorylab@gmail.com</string>
+    <string name="email_subject">Problem</string>
+    <string name="email_text">I have a problem with your Citatum app.</string>
+
+    <!-- Content description -->
+    <string name="cd_icon_launcher">Icon launcher</string>
+    <string name="cd_red_bookmark">Red bookmark image</string>
+    <string name="cd_icon_info">Icon info</string>
+    <string name="cd_icon_menu">Icon info</string>
+    <string name="cd_icon_search">Icon info</string>
+    <string name="cd_division_rectangle">Division rectangle</string>
+    <string name="cd_icon_entrance">Icon entrance</string>
+    <string name="cd_icon_confirm">Icon confirm</string>
+    <string name="cd_icon_tag">Icon tag</string>
+    <string name="cd_icon_bookmark">Icon bookmark</string>
+    <string name="cd_icon_basket">Icon basket</string>
+    <string name="cd_icon_profile">Icon profile</string>
 </resources>

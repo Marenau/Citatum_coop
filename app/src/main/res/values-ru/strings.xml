@@ -1,3 +1,135 @@
 <resources>
     <string name="app_name">Citatum</string>
+
+    <string name="default_text">По умолчанию</string>
+    <string name="empty_recycler">Записи отсутсвуют</string>
+
+    <!-- Элементы экранов регистрации и входа -->
+    <string name="login_text">Вход</string>
+    <string name="username_hint">Имя пользователя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="register_text">Регистрация</string>
+    <string name="forgot_text">Забыли пароль?</string>
+    <string name="email_hint">Электронная почта</string>
+
+    <!-- Элементы бокового меню -->
+    <string name="left_menu_category_settings_text">Настройки</string>
+    <string name="left_menu_category_pencil_text">Создать</string>
+    <string name="left_menu_category_hub_text">Главная</string>
+    <string name="left_menu_category_repository_text">Репозиторий</string>
+    <string name="left_menu_category_tags_text">Метки</string>
+    <string name="left_menu_category_bookmarks_text">Закладки</string>
+    <string name="left_menu_category_basket_text">Корзина</string>
+    <string name="left_menu_category_feedback_text">Оставить отзыв</string>
+
+    <!-- Элемент нижнего меню -->
+    <string name="bn_button">создать</string>
+
+    <!-- Элементы фрагмента главной страницы -->
+    <string name="hf_page_text">CITATUM</string>
+    <string name="hf_welcome_morning_text">Доброе утро!</string>
+    <string name="hf_welcome_day_text">Добрый день!</string>
+    <string name="hf_welcome_evening_text">Добрый вечер!</string>
+    <string name="hf_welcome_night_text">Доброй ночи!</string>
+    <string name="hf_day_quote_text">Цитата дня:</string>
+    <string name="hf_day_base_quote">Сейчас или никогда!</string>
+    <string name="hf_quote_cv_edit_text">Дополнить…</string>
+    <string name="hf_repository_text">Репозиторий:</string>
+    <string name="hf_tags_text">Метки:</string>
+
+    <!-- Элементы окна создания цитаты -->
+    <string name="qc_title_hint">Название</string>
+    <string name="qc_author_hint">Автор</string>
+    <string name="qc_text_hint">Введите текст…</string>
+    <string name="qc_pn_text_hint">Номер страницы:</string>
+    <string name="qс_pn_hint">10</string>
+    <string name="qc_tags_text">Метки:</string>
+    <string name="qc_autosubstitution_title_text">Без заголовка</string>
+    <string name="qc_autosubstitution_author_text">Без автора</string>
+    <string name="qc_autosubstitution_text_text">Обычный текст.</string>
+    <string name="qc_autosubstitution_page_number_text">0</string>
+    <string name="qc_quotes_added">Цитата была успешно добавлена.</string>
+    <string name="qc_quotes_update">Цитата была успешно обновлена.</string>
+    <string name="qc_quotes_remove">Цитата была помещена в корзину.</string>
+    <string name="qc_add_quote_request">Сохраните цитату для внесения изменений.</string>
+    <string name="qc_quote_bookmark_enable">Цитата была успешно добавлена в закладки.</string>
+    <string name="qc_quote_bookmark_disable">Цитата была успешно убрана из закладок.</string>
+
+    <!-- Элементы фрагмента репозитория -->
+    <string name="rf_page_text">Репозиторий</string>
+
+    <!-- Элементы фрагмента заголовков -->
+    <string name="ttf_title_text">Название</string>
+    <string name="ttf_author_text">Автор</string>
+
+    <!-- Элементы фрагмента меток -->
+    <string name="tgf_page_text">Метки</string>
+
+    <!-- Элементы фрагмента закладок -->
+    <string name="bmf_page_text">Закладки</string>
+
+    <!-- Элементы фрагмента корзины -->
+    <string name="bf_page_text">Корзина</string>
+    <string name="bf_quotes_deleting_text">Цитаты автоматически удаляются после 30 дней со дня их помещения в корзину.</string>
+
+    <!-- Элементы фрагмента настроек -->
+    <string name="sf_page_text">Настройки</string>
+    <string name="sf_quit_text">Выйти</string>
+    <string name="sf_date_text">С нами с</string>
+
+    <!-- Элементы фрагмента создания метки -->
+    <string name="tc_name_hint">Название</string>
+    <string name="tc_tags_text">Вы можете добавить метку к цитате, это упростит поиск по вашему репозиторию.</string>
+    <string name="tc_tag_added">Метка была успешно добавлена.</string>
+    <string name="tc_tag_update">Метка была успешно обновлена.</string>
+    <string name="tc_autosubstitution_name_text">Без названия</string>
+
+    <!-- Тексты уведомлений -->
+    <string name="no_connection_title_text">Упс!</string>
+    <string name="no_connection_message_text">Отсутствует интернет-соединение.</string>
+    <string name="no_connection_button_text">Оу…</string>
+    <string name="success_register_title_text">Успешно.</string>
+    <string name="success_register_message_text">Ваша учетная запись была успешно создана!</string>
+    <string name="success_register_button_text">Ок</string>
+    <string name="rejected_register_title_text">Упс!</string>
+    <string name="rejected_register_message_text">Учётная запись с таким адресом электронной почты уже существует.</string>
+    <string name="rejected_register_button_text">Принять бренность бытия</string>
+    <string name="incorrect_register_title_text">Упс!</string>
+    <string name="incorrect_register_message_text">Похоже, ваши данные неверны. Проверьте, что Вы ввели правильный адрес электронной почты; пароль содержит хотя бы одну цифру и имеет длину от 8 символов; во всех полях написано латиницей.</string>
+    <string name="incorrect_register_button_text">Ну ладно…</string>
+    <string name="incorrect_login_title_text">Упс!</string>
+    <string name="incorrect_login_message_text">Похоже, ваши данные неверны. Проверьте, что Вы ввели правильный адрес электронной почты и пароль.</string>
+    <string name="incorrect_login_button_text">Ну ладно…</string>
+    <string name="forgot_password_title_text">Внимание</string>
+    <string name="forgot_password_message_text">Введите свой адрес электронной почты в поле на экране входа, затем повторно нажмите на кнопку "забыли пароль".</string>
+    <string name="forgot_password_button_text">Ок</string>
+    <string name="forgot_password_sent_title_text">Типтоп</string>
+    <string name="forgot_password_sent_message_text">Сообщение было отправло на вашу почту. Перейдите по ссылке, указанной в письме.</string>
+    <string name="forgot_password_sent_button_text">Ок</string>
+
+    <!-- Текст уведомлений при удалении -->
+    <string name="sus_undo_text">Отмена</string>
+    <string name="sus_text">Метка</string>
+    <string name="sus_delete_text">была удалена.</string>
+    <string name="sus_quote_remove_text">Цитата была помещена в корзину.</string>
+    <string name="sus_quote_delete_text">Цитата была удалена.</string>
+
+    <!-- Текст для подстановки при отправки отзыва -->
+    <string name="email_address">citatumcorylab@gmail.com</string>
+    <string name="email_subject">Проблема</string>
+    <string name="email_text">У меня возникла проблема с вашим приложением Citatum.</string>
+
+    <!-- Описание содержимого -->
+    <string name="cd_icon_launcher">Иконка приложения</string>
+    <string name="cd_red_bookmark">Изображение красной закладки</string>
+    <string name="cd_icon_info">Иконка информации</string>
+    <string name="cd_icon_menu">Иконка меню</string>
+    <string name="cd_icon_search">Иконка информации</string>
+    <string name="cd_division_rectangle">Разделительный прямоугольник</string>
+    <string name="cd_icon_entrance">Иконка входа</string>
+    <string name="cd_icon_confirm">Иконка подтверждения</string>
+    <string name="cd_icon_tag">Иконка метки</string>
+    <string name="cd_icon_bookmark">Иконка закладки</string>
+    <string name="cd_icon_basket">Иконка корзины</string>
+    <string name="cd_icon_profile">Иконка профиля</string>
 </resources>
